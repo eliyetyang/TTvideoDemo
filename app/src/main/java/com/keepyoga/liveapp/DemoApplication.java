@@ -14,8 +14,6 @@ import com.ss.ttvideoengine.utils.TTVideoEngineLog;
 
 import java.io.File;
 
-import static com.ss.ttvideoengine.DataLoaderHelper.DATALOADER_KEY_STRING_DOWNLOAD_DIR;
-
 /*
  * FileName: DemoApplication
  * Author: Elite.Yang
@@ -52,7 +50,7 @@ public class DemoApplication extends Application {
 
         TTVideoEngine.setIntValue(DataLoaderHelper.DATALOADER_KEY_ENABLE_HLS_PROXY, 1);
         //下载相关
-        TTVideoEngine.setStringValue(DATALOADER_KEY_STRING_DOWNLOAD_DIR, "download dir");
+//        TTVideoEngine.setStringValue(DATALOADER_KEY_STRING_DOWNLOAD_DIR, getExternalCacheDir().getAbsolutePath());
         try {
             // 启动数据模块
             TTVideoEngine.startDataLoader(this);
