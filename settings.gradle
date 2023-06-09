@@ -11,3 +11,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "TTVideoDemo"
 include ':app'
+include ':vod-player-utils'
+include ':vod-player'
+include ':vod-player-volcengine'

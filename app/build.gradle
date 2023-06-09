@@ -43,4 +43,6 @@ dependencies {
     implementation 'com.bytedance.boringssl.so:boringssl-so:1.0.9'
     implementation fileTree(includes: ['*.aar'], dir: 'libs')
     implementation "com.squareup.okhttp3:okhttp:3.11.0"
+    implementation project(':vod-player')
+    implementation project(':vod-player-volcengine')
 }
